@@ -42,7 +42,7 @@ Many of the tasks developers perform are faster when done from the command line,
 
 - A CLI is a program to interact with a computer through text.  Mac's command line "shell" program is called Terminal. It lets users interact with the operating system.  It's a "Read, Evaluate, Print, Loop"-style program.
 
-  **You do:** Try using the keyboard shortcut `Command Space` to search for "Terminal".  Open Terminal. 
+  **You do:** Try using the keyboard shortcut `Command Space` to search for "Terminal".  Open Terminal.
 
 - User can input commands in a specific "shell" scripting language. The default command line language for macOS and many Linux distributions is called `bash`. You may also eventually use variants like `zsh`, `ash`, `ssh`, and their predecessor `sh`.
 
@@ -65,7 +65,7 @@ Many of the tasks developers perform are faster when done from the command line,
 
 Commands on the command line work a lot like functions in JavaScript. The base command is often followed by some number of arguments, and/or by some options or flags.
 
-For example, let's take the command `git add`. This isn't a built-in part of bash; it's an extra command that we'll use quite often to have git make a record of changes. 
+For example, let's take the command `git add`. This isn't a built-in part of bash; it's an extra command that we'll use quite often to have git make a record of changes.
 
 Here's how we might use `git add`:
 
@@ -73,13 +73,13 @@ Here's how we might use `git add`:
 git add ./styles --all
 ```
 
-The main command here is `git add`. 
+The main command here is `git add`.
 
 Next, there's a relative file path for a directory: `./styles`. That's the target of the command. You can think of it like an argument to the `git add` function.
 
-Then, there's a `--all` flag. Flags are special options that make it easier to customize how a command behaves.  For `git add`, `--all` tells git to record the fact that we deleted some files. 
+Then, there's a `--all` flag. Flags are special options that make it easier to customize how a command behaves.  For `git add`, `--all` tells git to record the fact that we deleted some files.
 
-> Note: While the main command must always come first, you can often put flags before or after the other arguments. Pay attention to the documentation for a command to see how it can be used. 
+> Note: While the main command must always come first, you can often put flags before or after the other arguments. Pay attention to the documentation for a command to see how it can be used.
 
 
 #### Getting more information about a command:
@@ -100,19 +100,48 @@ Then, there's a `--all` flag. Flags are special options that make it easier to c
 
 1. `cd`
 
+  Can move your location, or create an alias to move quickly to a location like `~/Downloads`.
+
+  - Michael
+
 2. `ls`
+
+  List the contents of a file.  Flags like `-c` can be used to add more options or details (`-a` is all files).  Also visually separates directories and files.
+   - Addy
 
 3. `mkdir`
 
+  Makes directories (folders). Does one job well. Has a lot of options to explore (`-p` creates all directories on a path).
+  - Jane
+
 4. `touch`
+
+  Changes time of file access and modification.  Can be used to make a file.
+  - Will
 
 5. `mv`
 
+  Rename a file or move to a different place.  `mv source target`
+    - if source is a file, start with a `/` for full path
+  Can move multiple objects `mv 1.txt 2.txt 3.txt numbers/`
+   - Mahmoud
+
 6. `rm`
+
+  Deletes file. Can delete multiple files `rm 1.txt 2.txt`.  `rm -i` asks for confirmation before deleting.
+
+  - Sejin
 
 7. `cp`
 
+  Copy files.  The `-p` flag lets you save permissions, modification time, forks and remote connections.
+
+  - Donny
+
 8. `which`
+
+  Search in PATH (depending on arguments or flags) for a file or name.  Helps check if a command is installed.
+  - Kevin
 
 
 #### Common Flags
@@ -121,10 +150,15 @@ The same flags won't work with every command, but knowing a few will help you de
 
 1. `-r`, as in `cp -r` and `rm -r`
 
+  Recursive, for folders.
+
 2.  `-a`, as in `ls -a`
 
 3. `-f`, as in `rm -f`
-  
+
+  For `rm -f` removes all files regardless of permission or options like `-i`.  
+  - Julie
+
 4. `--help`, as in `git --help`  
 
 5. `--version`, as in `ruby --version`  
@@ -136,12 +170,12 @@ The same flags won't work with every command, but knowing a few will help you de
 
 **`/` (root directory)**
 
-`/` is the computer's root directory, which contains all the files on the computer. 
+`/` is the computer's root directory, which contains all the files on the computer.
 
 **`~` (home directory)**
 
-  `~` is the home directory for the current user. In Finder, it's named with your user name. You can `ls ~` to see everything inside it - things like Desktop, Documents, Downloads. 
-  
+  `~` is the home directory for the current user. In Finder, it's named with your user name. You can `ls ~` to see everything inside it - things like Desktop, Documents, Downloads.
+
   * **You do:** In Finder, press CMD SHIFT H to enter your home directory. Then press CMD ArrowUp to go one directory up, to the Users directory.  Find the home directory with your user name, and drag it into your favorites so it's easy to find later!
 
 #### Relative Paths:
@@ -155,7 +189,7 @@ The same flags won't work with every command, but knowing a few will help you de
 **`..` (parent directory)**
 
   `..` is the directory containing whichever directory you're in, known as the "parent" directory. It's often used when navigating files: `cd ../..` would move you two levels "up" the file tree.  
-  
+
 #### Tab Completion
 
 When you're typing a file or directory name, you can hit Tab as soon as you've given the computer enough information to know which file you need. Try it!
@@ -167,8 +201,8 @@ When you're typing a file or directory name, you can hit Tab as soon as you've g
   $ cd D    # if you hit Tab after D, you may hear a beep - the computer can't tell which directory you want yet.
   $ cd De   # now Tab will fill in Desktop
   ```
-  
-  
+
+
 #### Commands for permissions:
 
 1. `sudo`: run a command as another user, usually the "super user" with significantly more permissions. **Make sure you understand the effect a `sudo` command will have before you run it and that you trust its source.** See the [man page](https://www.freebsd.org/cgi/man.cgi?query=sudo&apropos=0&sektion=0&manpath=FreeBSD+10.3-RELEASE+and+Ports&arch=default&format=html) and/or [wikipedia](https://en.wikipedia.org/wiki/Sudo).
