@@ -23,7 +23,6 @@ Many of the tasks developers perform are faster when done from the command line,
 
 - Navigate the file system from the command line.
 - Create, move, copy, and delete files or directories from the command line.
-- Explain and give examples of flags.
 - Research unfamiliar shell commands with `--help`, `man`, and/or online resources.
 - Describe the uses of the `sudo` and `chmod` commands.
 
