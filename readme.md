@@ -66,21 +66,19 @@ Many of the tasks developers perform are faster when done from the command line,
 
 Commands on the command line work a lot like functions in JavaScript. The base command is often followed by some number of arguments, and/or by some options or flags.
 
-For example, let's take the command `tree`. This isn't a built-in part of bash; it's an extra command that can be useful for viewing the entire file tree of a file or directory. 
+For example, let's take the command `git add`. This isn't a built-in part of bash; it's an extra command that we'll use quite often to have git make a record of changes. 
 
-Here's how we might use `tree`:
+Here's how we might use `git add`:
 
 ```bash
-tree ~/Desktop -L 2 -d
+git add ./styles --all
 ```
 
-The main command here is `tree`. 
+The main command here is `git add`. 
 
-Next, there's a relative file path for a directory: `~/Desktop`. That's the target of the tree command. You can think of it like an argument to the `tree` function.
+Next, there's a relative file path for a directory: `./styles`. That's the target of the command. You can think of it like an argument to the `git add` function.
 
-Then, there's a `-L` flag. Flags are special options that make it easier to customize how a command behaves.  For `tree`, `-L` lets us set how many "levels" of files and directories we want to see.   `-L 2` means we'll only see two levels in the file tree. 
-
-There's also a `-d` flag, which means only directories will be shown in the file tree.  
+Then, there's a `--all` flag. Flags are special options that make it easier to customize how a command behaves.  For `git add`, `--all` tells git to record the fact that we deleted some files. 
 
 > Note: While the main command must always come first, you can often put flags before or after the other arguments. Pay attention to the documentation for a command to see how it can be used. 
 
