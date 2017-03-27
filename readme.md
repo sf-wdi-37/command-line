@@ -113,6 +113,8 @@ Then, there's a `--all` flag. Flags are special options that make it easier to c
 
 7. `cp`
 
+8. `which`
+
 
 #### Common Flags
 
