@@ -197,5 +197,5 @@ If you're already comfortable with the Terminal commands and shortcuts listed ab
 
 ### Additional Resources
 
-1. [Mac & Atom Keyboard Shortcuts](https://github.com/SF-WDI-LABS/how-to/blob/master/keyboard-shorcuts.md)
 1. [Terminal Commands](https://github.com/SF-WDI-LABS/how-to/blob/master/command-line.md)
+2. [Mac & Atom Keyboard Shortcuts](https://github.com/SF-WDI-LABS/how-to/blob/master/keyboard-shorcuts.md)
