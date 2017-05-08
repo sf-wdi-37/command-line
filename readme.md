@@ -100,50 +100,25 @@ Then, there's a `--all` flag. Flags are special options that make it easier to c
 
 1. `cd`
 
-   Can move your location, or create an alias to move quickly to a location like `~/Downloads`.
-
-   - Michael
 
 2. `ls`
 
-    List the contents of a file.  Flags like `-c` can be used to add more options or details (`-a` is all files).  Also visually separates directories and files.
-  
-     - Addy
-
 3. `mkdir`
 
-    Makes directories (folders). Does one job well. Has a lot of options to explore (`-p` creates all directories on a path).
-  
-    - Jane
 
 4. `touch`
 
-    Changes time of file access and modification.  Can be used to make a file.
-     - Will
-
 5. `mv`
 
-    Rename a file or move to a different place.  `mv source target`
-      - if source is a file, start with a `/` for full path
-    Can move multiple objects `mv 1.txt 2.txt 3.txt numbers/`
-     - Mahmoud
 
 6. `rm`
 
-    Deletes file. Can delete multiple files `rm 1.txt 2.txt`.  `rm -i` asks for confirmation before deleting.
-
-    - Sejin
 
 7. `cp`
 
-    Copy files.  The `-p` flag lets you save permissions, modification time, forks and remote connections.
-
-    - Donny
 
 8. `which`
 
-    Search in PATH (depending on arguments or flags) for a file or name.  Helps check if a command is installed.
-    - Kevin
 
 
 #### Common Flags
@@ -152,14 +127,12 @@ The same flags won't work with every command, but knowing a few will help you de
 
 1. `-r`, as in `cp -r` and `rm -r`
 
-    Recursive, for folders.
-
+   
 2.  `-a`, as in `ls -a`
 
 3. `-f`, as in `rm -f`
 
-    For `rm -f` removes all files regardless of permission or options like `-i`.  
-    - Julie
+
 
 4. `--help`, as in `git --help`  
 
